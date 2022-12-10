@@ -1,2 +1,8 @@
-// See the Electron documentation for details on how to use preload scripts:
-// https://www.electronjs.org/docs/latest/tutorial/process-model#preload-scripts
+// Our Buttons
+const videoElement = document.querySelector('video');
+const startButton = document.getElementById('startButton');
+const stopButton = document.getElementById('stopButton');
+const videoSelectBtn = document.getElementById('videoSelectBtn');
+
+const { desktopCapturer, remote } = require('electron');
+const { Menu } = remote; // This allows us build native menu in front end.
